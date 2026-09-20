@@ -1,7 +1,7 @@
 # https://adventofcode.com/2025/day/1
 # Day 1: Secret Entrance
 
-with open("input.txt", "r") as file:
+with open("sample.txt", "r") as file:
     input = file.readlines()
 
 MIN = 0
@@ -60,6 +60,7 @@ def get_pointer_and_zero_count(initial_pointer, movement, direction):
         zero_count += 1
 
     return pointer, zero_count
+
 
 # Initial state
 pointer = 50

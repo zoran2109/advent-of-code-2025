@@ -1,8 +1,8 @@
 # Day 1 - Secret Entrance
 
-The puzzle is about movement inside the given number range. If the movement goes outside one of the edges, it continues in the same direction from the other edge, circulating (MIN or MAX, depending on direction). We are given startimg position of 50, directions to move are left (L - subtract the movement) or right (R - add the movement) and the range is from 0 to 99.
+The puzzle is about movement inside the given number range. If the movement goes outside one of the edges, it continues in the same direction from the other edge, in circulating motion (MIN or MAX, depending on direction). We are given starting position of 50, instructions that contain direction to move left (L - subtract the movement) or right (R - add the movement) and movement number. The range for the movement spans from 0 to 99.
 
-Example of directions:
+Example of instructions:
 
 `L68`
 `L30`
@@ -113,3 +113,6 @@ def get_zero_count(initial_pointer, movement, direction):
         zero_count += 1
 
     return zero_count
+```
+
+All things considered, the puzzle wasn't that difficult, since almost every case was displayed in the sample input from the puzzle text.

@@ -1,17 +1,4 @@
-# Advent of code 2025
-
-This repository contains my solutions of [AoC for the previous year](https://adventofcode.com/2025) written in Python. 2025 was the first year that I didn't try to follow through during the event since discovering it in 2021. So this is my try to make-up what I missed.
-
-As per request from AoC site, the full puzzle input is not included in the repo.
-
-## What to expect
-The idea of this 'project' is to have some joy in thinking, to learn something, to express myself.
-
-The goal is to solve these problems by myself, avoiding any usage of AI prompts.
-
-I'm not competitive programmer nor I'm great in producing optimized solutions. Main goal is to solve the puzzle in any way possible. But since I'm not solving these daily, some improvements are possible over time, for the sake of learning. More then pure efficiency I will value readable and understandable solutions, but without commiting to over-engineer everything. I'll try writing about some solutions because I like to write, but also to see if I can communicate the ideas.
-
-## Day 1 - Secret Entrance
+# Day 1 - Secret Entrance
 
 The puzzle is about movement inside the given number range. If the movement goes outside one of the edges, it continues in the same direction from the other edge, circulating (MIN or MAX, depending on direction). We are given startimg position of 50, directions to move are left (L - subtract the movement) or right (R - add the movement) and the range is from 0 to 99.
 
@@ -126,6 +113,3 @@ def get_zero_count(initial_pointer, movement, direction):
         zero_count += 1
 
     return zero_count
-```
-
-## Day 2: Gift Shop

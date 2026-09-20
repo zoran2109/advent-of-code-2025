@@ -1,8 +1,12 @@
 # https://adventofcode.com/2025/day/1
 # Day 1: Secret Entrance
 
-with open("input.txt", "r") as file:
+with open("sample.txt", "r") as file:
     input = file.readlines()
+
+MIN = 0
+MAX = 99
+ZERO = 0
 
 def add(a, b):
     return a + b
@@ -10,42 +14,49 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-def get_new_pointer(total, number, operation):
-    result = operation(total, number)
+def get_new_pointer(initial_pointer, number, operation):
+    result = operation(initial_pointer, number)
     pointer = abs(result % 100)
     return pointer
 
-def count_zeros(total, number, operation):
+# Part two
+def count_all_zeros_in_rotation(initial_pointer, number, operation):
+    STEP = 1
     zero_count = 0
-    pointer = total
+    pointer = initial_pointer
     for i in range(number):
-        pointer = operation(pointer, 1)
-        if pointer == -1:
-            pointer = 99
-        elif pointer == 100:
-            pointer = 0
-        if pointer == 0:
+        pointer = operation(pointer, STEP)
+        if pointer < MIN:
+            pointer = MAX
+        elif pointer > MAX:
+            pointer = MIN
+        if pointer == ZERO:
             zero_count += 1
     return zero_count
 
 # Initial value
 pointer = 50
+
+# Totals
 # Part one
 point_at_zero = 0
 # Part two
 zero_touched = 0
+
 for command in input:
+    # Command examples: L68, R48
     number = int(command.strip()[1:])
     operation = add if command[0] == "R" else subtract
 
-    # Part two
-    zero_touched += count_zeros(pointer, number, operation)
+    # Part two - count all zeros during rotation in range
+    zero_touched += count_all_zeros_in_rotation(pointer, number, operation)
 
-    # Part one - later because it overwrites the pointer value
+    # Gives the pointer value
     pointer = get_new_pointer(pointer, number, operation)
-    if pointer == 0:
+
+    # Part one
+    if pointer == ZERO:
         point_at_zero += 1
 
 print("Part 1:", point_at_zero)
 print("Part 2:", zero_touched)
-

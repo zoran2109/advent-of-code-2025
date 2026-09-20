@@ -20,18 +20,17 @@ I'm not a competitive programmer nor I'm great in producing optimized solutions.
 
 | Puzzle | Part 1 | Part 2 | Solution | Overview |
 | -------- | ------- | ------- | ------- | ------- |
-| Day 1 | [x] | [x] | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day01/day01.py) | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day01/README.md) |
-| Day 2 | [ ] | [ ] | - | - |
-| Day 3 | [ ] | [ ] | - | - |
-| Day 4 | [ ] | [ ] | - | - |
-| Day 5 | [ ] | [ ] | - | - |
-| Day 6 | [ ] | [ ] | - | - |
-| Day 7 | [ ] | [ ] | - | - |
-| Day 8 | [ ] | [ ] | - | - |
-| Day 9 | [ ] | [ ] | - | - |
-| Day 10 | [ ] | [ ] | - | - |
-| Day 11 | [ ] | [ ] | - | - |
-| Day 12 | [ ] | [ ] | - | - |
-
+| Day 1 | ✅ | ✅ | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day01/day01.py) | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day01/README.md) |
+| Day 2 | ❌ | ❌ | - | - |
+| Day 3 | ❌ | ❌ | - | - |
+| Day 4 | ❌ | ❌ | - | - |
+| Day 5 | ❌ | ❌ | - | - |
+| Day 6 | ❌ | ❌ | - | - |
+| Day 7 | ❌ | ❌ | - | - |
+| Day 8 | ❌ | ❌ | - | - |
+| Day 9 | ❌ | ❌ | - | - |
+| Day 10 | ❌ | ❌ | - | - |
+| Day 11 | ❌ | ❌ | - | - |
+| Day 12 | ❌ | ❌ | - | - |
 
 ## Overview

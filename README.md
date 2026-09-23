@@ -8,20 +8,20 @@ The idea of this 'project' is to have some joy in thinking, to learn something a
 
 The goal is to solve these problems by myself, without using AI.
 
-As per request from AoC site, the full puzzle inputs are not included in the repo.
+As per request from AoC site, the original problem descriptions and full puzzle inputs are not included.
 
 
 ## What to expect
 
-I'm not a competitive programmer nor I'm great in producing optimized solutions. Main goal is to solve the puzzle in any way possible. But since I'm not solving these daily, some improvements are possible over time for the sake of learning. More than pure efficiency I will value readable and understandable solutions, but without commiting to over-engineer everything. I'll try writing about some solutions because I like to write, but also to see if I can communicate the ideas behind my solutions.
+I'm not a competitive programmer, math person nor I'm great in producing optimized solutions. Main goal is to solve the puzzle in any way possible. But since I'm not solving these daily, some improvements are possible over time for the sake of learning. More than pure efficiency I will value readable and understandable solutions, but without commiting to over-engineer everything. I'll try writing about some solutions because I like to write, but also to see if I can communicate the ideas behind my solutions.
 
 
-## Solutions
+## Status
 
 | Puzzle | Part 1 | Part 2 | Solution | Overview |
 | -------- | ------- | ------- | ------- | ------- |
 | Day 1 | ✅ | ✅ | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day01/day01.py) | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day01/README.md) |
-| Day 2 | ❌ | ❌ | - | - |
+| Day 2 | ✅ | ✅ | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day02/day02.py) | [link](https://github.com/zoran2109/advent-of-code-2025/blob/main/day02/README.md) |
 | Day 3 | ❌ | ❌ | - | - |
 | Day 4 | ❌ | ❌ | - | - |
 | Day 5 | ❌ | ❌ | - | - |
@@ -34,3 +34,7 @@ I'm not a competitive programmer nor I'm great in producing optimized solutions.
 | Day 12 | ❌ | ❌ | - | - |
 
 ## Overview
+
+## TODOs
+- Day 1 - improve README explanation (remove excessive code, more pseudocode, improve part 2 explanation)
+- Day 2 - improve solution (see how to avoid excessive type-casting between int and str; avoid duplicates in the final array)

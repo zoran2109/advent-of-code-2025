@@ -1,16 +1,14 @@
 # https://adventofcode.com/2025/day/1
 # Day 1: Secret Entrance
 
-with open("sample.txt", "r") as file:
-    input = file.readlines()
-
+# Globals
 MIN = 0
 MAX = 99
-
 ZERO = 0
 
 
 # Brute-force solution
+# Not used - left for reference
 def get_pointer_and_zero_count_brute(initial_pointer, movement, direction):
     step = 1 # Since we 'walk' through the whole sequence
     zero_count = 0
@@ -62,29 +60,43 @@ def get_pointer_and_zero_count(initial_pointer, movement, direction):
     return pointer, zero_count
 
 
-# Initial state
-pointer = 50
 
-# Totals
-# Part one
-point_at_zero = 0
-# Part two
-zero_count = 0
+def solve(puzzle_input):
+    # Initial state
+    pointer = 50
 
-for command in input:
-    # Command examples: L68, R48
-    # We split the command to direction (R,L) and movement (68, 48)
-    direction = command[0]
-    movement = int(command.strip()[1:])
-
-    pointer, zeros_encountered = get_pointer_and_zero_count(pointer, movement, direction)
-
+    # Totals
     # Part one
-    if pointer == ZERO:
-        point_at_zero += 1
-
+    point_at_zero = 0
     # Part two
-    zero_count += zeros_encountered
+    zero_count = 0
 
-print("Part 1:", point_at_zero)
-print("Part 2:", zero_count)
+    for command in puzzle_input:
+        # Command examples: L68, R48
+        # We split the command to direction (R,L) and movement (68, 48)
+        direction = command[0]
+        movement = int(command.strip()[1:])
+
+        pointer, zeros_encountered = get_pointer_and_zero_count(pointer, movement, direction)
+
+        # Part one
+        if pointer == ZERO:
+            point_at_zero += 1
+
+        # Part two
+        zero_count += zeros_encountered
+
+    return point_at_zero, zero_count
+
+
+def main():
+    with open("input.txt", "r") as file:
+        puzzle_input = file.readlines()
+
+    part_one, part_two = solve(puzzle_input)
+
+    print("Part one:", part_one)
+    print("Part two:", part_two)
+
+if __name__ == "__main__":
+    main()
